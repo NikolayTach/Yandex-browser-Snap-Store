@@ -1,0 +1,40 @@
+https://launchpad.net/~build.snapcraft.io/+snap/3dfad47db0d5739922ee780af9207302/+build/2014638
+RUN: /usr/share/launchpad-buildd/bin/builder-prep 
+Kernel version: Linux bos02-s390x-006 5.4.0-137-generic #154-Ubuntu SMP Thu Jan 5 17:03:11 UTC 2023 s390x
+Buildd toolchain package versions: launchpad-buildd_229~619~ubuntu20.04.1 python3-lpbuildd_229~619~ubuntu20.04.1 sbuild_0.79.0-1ubuntu1 git-build-recipe_0.3.6 git_1:2.25.1-1ubuntu3.8 dpkg-dev_1.19.7ubuntu3.2 python3-debian_0.1.36ubuntu1.
+Syncing the system clock with the buildd NTP service...
+ 7 Feb 05:53:08 ntpdate[1862]: adjust time server 10.211.37.1 offset -0.000082 sec
+RUN: /usr/share/launchpad-buildd/bin/in-target unpack-chroot --backend=lxd --series=focal --arch=s390x SNAPBUILD-2014638 --image-type lxd /home/buildd/filecache-default/451fab5963eaecabef3a7bcc413c85f366246786
+Creating target for build SNAPBUILD-2014638
+To start your first container, try: lxc launch ubuntu:20.04
+Or for a virtual machine: lxc launch ubuntu:20.04 --vm
+
+/usr/lib/python3/dist-packages/pylxd/models/operation.py:76: UserWarning: Attempted to set unknown attribute "location" on instance of "Operation"
+  warnings.warn(
+RUN: /usr/share/launchpad-buildd/bin/in-target mount-chroot --backend=lxd --series=focal --arch=s390x SNAPBUILD-2014638
+Starting target for build SNAPBUILD-2014638
+/usr/lib/python3/dist-packages/pylxd/models/operation.py:76: UserWarning: Attempted to set unknown attribute "location" on instance of "Operation"
+  warnings.warn(
+Error: Instance is not running
+/usr/lib/python3/dist-packages/pylxd/models/_model.py:134: UserWarning: Attempted to set unknown attribute "type" on instance of "Container"
+  warnings.warn(
+/usr/lib/python3/dist-packages/pylxd/models/_model.py:134: UserWarning: Attempted to set unknown attribute "project" on instance of "Container"
+  warnings.warn(
+Error: Instance is not running
+Error: Instance is not running
+Error: Instance is not running
+Error: websocket: bad handshake
+Traceback (most recent call last):
+  File "/usr/share/launchpad-buildd/bin/in-target", line 23, in <module>
+    sys.exit(main())
+  File "/usr/share/launchpad-buildd/bin/in-target", line 19, in main
+    return args.operation.run()
+  File "/usr/lib/python3/dist-packages/lpbuildd/target/lifecycle.py", line 38, in run
+    self.backend.start()
+  File "/usr/lib/python3/dist-packages/lpbuildd/target/lxd.py", line 484, in start
+    self.run(
+  File "/usr/lib/python3/dist-packages/lpbuildd/target/lxd.py", line 571, in run
+    subprocess.check_call(cmd, **kwargs)
+  File "/usr/lib/python3.8/subprocess.py", line 364, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['lxc', 'exec', 'lp-focal-s390x', '--', 'linux64', 'mknod', '-m', '0660', '/dev/loop140', 'b', '7', '140']' returned non-zero exit status 1.
