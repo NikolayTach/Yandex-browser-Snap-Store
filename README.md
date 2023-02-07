@@ -1,7 +1,7 @@
 # About 
 A Russian based browser system that includes marketing utilities,navigational systems, metrical advertising, and the famous AI voice system "Alisa".
 # Ubuntu 22.04 Installation
-1. Downloads the .deb package.
+1. Downloads the `.deb` package.
  ````
 $ wget https://browser.yandex.ru/download/?banerid=6302000000&zih=1&beta=1&os=linux&x64=1&package=deb&full=1
 ````
