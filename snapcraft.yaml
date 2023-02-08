@@ -1,5 +1,5 @@
 name: yandex 
-base: core20 
+base: core18
 version: '1.2' 
 summary: Browser from Yandex "LLC"
 description: |
