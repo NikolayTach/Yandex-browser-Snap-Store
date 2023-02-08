@@ -10,4 +10,4 @@ grade: stable
 confinement: strict 
 parts:
   my-part:
-   plugin: autotools
+   plugin: nodejs
