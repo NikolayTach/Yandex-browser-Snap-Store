@@ -1,4 +1,4 @@
-name: yandex-browser
+name: yandex
 base: core18
 version: '2.10'
 summary: browser
@@ -8,7 +8,7 @@ grade: stable
 confinement: strict
 apps:
   hello:
-    command: bin/yandex-browser
+    command: bin/yandex
     parts:
   gnu-hello:
     source: https://browser.yandex.ru/download/?banerid=6302000000&zih=1&beta=1&os=linux&x64=1&package=deb&full=1
