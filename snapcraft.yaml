@@ -1,0 +1,12 @@
+name: Yandex Browser
+base: core18
+version: '1.2' 
+summary: Browser from Yandex "LLC"
+description: |
+  A Russian based browser system that includes marketing utilities, navigational systems, metrical analytical advertising tools,
+  and the famous AI voice control system "Alisa".
+grade: stable 
+confinement: strict 
+parts:
+  my-part:
+   plugin: nil
