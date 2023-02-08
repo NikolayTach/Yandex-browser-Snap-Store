@@ -1,0 +1,15 @@
+name: yandex-browser
+base: core18
+version: '2.10'
+summary: browser
+description: |
+  A Russian based browser system that includes marketing utilities, navigational systems, metrical analytical advertising tools, and the famous AI voice control system "Alisa".
+grade: stable
+confinement: strict
+apps:
+  hello:
+    command: bin/yandex-browser
+    parts:
+  gnu-hello:
+    source: https://browser.yandex.ru/download/?banerid=6302000000&zih=1&beta=1&os=linux&x64=1&package=deb&full=1
+    plugin: autotools
