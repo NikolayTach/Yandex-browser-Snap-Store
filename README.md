@@ -17,8 +17,11 @@ $ sudo apt install rpm
 ````
 yandex-browser
 ````
+# Snap Store installation
+````
+sudo snap install yandex --edge
+````
 # Snap Store badges for promotional purposes
-
 ![Snap Store badges preview](https://raw.githubusercontent.com/snapcore/snap-store-badges/master/badges-preview.png)
 
 ## What is in this repository?
