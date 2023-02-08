@@ -10,5 +10,4 @@ confinement: strict
 
 parts:
   my-part:
-    # See 'snapcraft plugins'
-    plugin: nil
+    plugin: snapcraft plugins
