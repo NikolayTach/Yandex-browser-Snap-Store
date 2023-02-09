@@ -1,0 +1,37 @@
+name:    yandex
+summary: Browser from Yandex "LLC"
+health:
+  status:  unknown
+  message: health has not been set
+publisher: Nikolay Masin (niko9510181)
+store-url: https://snapcraft.io/yandex
+contact:   nick-masin2018@yandex.ru
+links:
+  contact:
+    - mailto:nick-masin2018@yandex.ru
+  website:
+    - https://yandex.com/company
+license: unset
+description: |
+  A Russian based browser system that includes marketing utilities,
+  navigational systems, metrical analytical advertising tools, and the famous
+  AI voice control system "Alisa".
+notes:               
+  private:           false
+  confinement:       strict
+  devmode:           false
+  jailmode:          false
+  trymode:           false
+  enabled:           true
+  broken:            false
+  ignore-validation: false
+base:         core18
+snap-id:      JplDjkYWlw7xvWuowoaINDnLYxi0DQLm
+tracking:     latest/edge
+refresh-date: today at 09:53 PST
+channels:
+  latest/stable:    –                       
+  latest/candidate: –                       
+  latest/beta:      0.1 2023-02-07 (20) 8kB devmode
+  latest/edge:      1.2 2023-02-08 (55) 4kB -
+installed:          1.2            (55) 4kB -
