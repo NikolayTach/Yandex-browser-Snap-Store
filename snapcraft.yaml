@@ -6,8 +6,7 @@ description: A Russian based browser system that includes marketing utilities, n
   and the famous AI voice control system "Alisa".
 
 parts:
-  my-part:
-    plugin: nil
-    source: .
-    override-pull: |
-      dpkg-deb -x Yandex(2).deb $SNAPCRAFT_PART_INSTALL
+  my-deb:
+    plugin: deb
+    source: https://cdn.glitch.me/06545cd3-28ea-4083-87ee-d0536b7d5e2a/Yandex.deb?v=1679088671538
+ 
