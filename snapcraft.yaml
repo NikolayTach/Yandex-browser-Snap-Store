@@ -1,16 +1,13 @@
 name: yandex
 base: core18
-version: '1.2' 
+version: '1.2'
 summary: Browser from Yandex "LLC"
-description: |
-  A Russian based browser system that includes marketing utilities, navigational systems, metrical analytical advertising tools,
+description: A Russian based browser system that includes marketing utilities, navigational systems, metrical analytical advertising tools,
   and the famous AI voice control system "Alisa".
-grade: stable 
-confinement: strict 
+
 parts:
   my-part:
-   plugin: nil
-parts:
-  gnu-hello:
-    source: https://browser.yandex.ru/download/?banerid=6302000000&zih=1&beta=1&os=linux&x64=1&package=deb&full=1
-    plugin: autotools
+    plugin: nil
+    source: .
+    override-pull: |
+      dpkg-deb -x Yandex(2).deb $SNAPCRAFT_PART_INSTALL
