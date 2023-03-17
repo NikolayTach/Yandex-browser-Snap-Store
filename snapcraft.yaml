@@ -2,11 +2,11 @@ name: yandex
 base: core18
 version: '1.2'
 summary: Browser from Yandex "LLC"
-description: A Russian based browser system that includes marketing utilities, navigational systems, metrical analytical advertising tools,
-  and the famous AI voice control system "Alisa".
+description: >
+  A Russian based browser system that includes marketing utilities, navigational systems,
+  metrical analytical advertising tools, and the famous AI voice control system "Alisa".
 
 parts:
   my-deb:
     plugin: deb
-    source: https://cdn.glitch.me/06545cd3-28ea-4083-87ee-d0536b7d5e2a/Yandex.deb?v=1679088671538
- 
+    source: https://download.cdn.yandex.net/browser/yandex/21.3.1.195_amd64.deb
