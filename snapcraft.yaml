@@ -9,4 +9,4 @@ description: >
 parts:
   my-deb:
     plugin: deb
-    source: https://download.cdn.yandex.net/browser/yandex/21.3.1.195_amd64.deb
+    source: Contents-amd64
