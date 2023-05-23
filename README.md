@@ -1,5 +1,5 @@
 # About 
-A Russian based browser system that includes marketing utilities,navigational systems, metrical advertising, and the famous AI voice system "Alisa".
+A russian based browser system that includes marketing utilities,navigational systems, metrical advertising, and the famous AI voice system "Alisa".
 # Ubuntu 22.04 Installation
 1. Downloads the `.deb` package.
  ````
