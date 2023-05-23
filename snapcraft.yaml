@@ -9,4 +9,4 @@ description: >
 parts:
   my-deb:
     plugin: deb
-    source: https://browser.yandex.ru/download/?banerid=6302000000
+    source: https://repo.yandex.ru/yandex-browser/deb/dists/beta/main/
