@@ -9,4 +9,4 @@ description: >
 parts:
   my-deb:
     plugin: deb
-    source: Contents-amd64
+    source: https://browser.yandex.ru/download/?banerid=6302000000
