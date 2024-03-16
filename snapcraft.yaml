@@ -1,20 +1,60 @@
 name: yandex
-base: core18
+base: core22
 version: '1.2'
 summary: Browser from Yandex "LLC"
 description: >
   A Russian based browser system that includes marketing utilities, navigational systems,
   metrical analytical advertising tools, and the famous AI voice control system "Alisa".
 
+confinement: strict
+
 parts:
   browser:
     plugin: nil
     stage-packages: 
-      - yandex
+      - yandex-browser-beta
 
 package-repositories:
   - type: apt
     components: [main]
     suites: [beta]
-    key-id: 224974db7fed6decb7d855ef60b9cd3a083a7a9a
+    key-id: 224974DB7FED6DECB7D855EF60B9CD3A083A7A9A
     url: http://repo.yandex.ru/yandex-browser/deb
+
+    
+apps:
+  yandex:
+    extensions: [gnome]
+    command: bin/chromium.launcher  # Path to the executable you want to run
+    desktop: bin/chromium.desktop  # Path to the .desktop file in the deb
+    common-id: yandex.desktop
+    environment:
+      CHROME_DESKTOP: chromium.desktop
+      CHROME_CONFIG_HOME: $SNAP_USER_COMMON
+      GTK_USE_PORTAL: 1
+      SPA_PLUGIN_DIR: $SNAP/usr/lib/$CRAFT_ARCH_TRIPLET/spa-0.2
+      PIPEWIRE_CONFIG_NAME: $SNAP/usr/share/pipewire/pipewire.conf
+      PIPEWIRE_MODULE_DIR: $SNAP/usr/lib/$CRAFT_ARCH_TRIPLET/pipewire-0.3
+      GFX_FEATURE_FILE: $SNAP_USER_COMMON/igfx_user_feature.txt
+    plugs:
+      - audio-playback
+      - audio-record
+      - bluez # for Web Bluetooth (https://launchpad.net/bugs/1887201)
+      - camera
+      - cups
+      - hardware-observe
+      - home
+      - joystick
+      - mount-observe
+      - network
+      - network-manager
+      - password-manager-service
+      - raw-usb # for WebUSB (https://launchpad.net/bugs/1780678)
+      - removable-media
+      - screen-inhibit-control
+      - system-packages-doc
+      - u2f-devices
+      - unity7 # required for xdg-open to work
+      - upower-observe
+    slots:
+      - mpris
