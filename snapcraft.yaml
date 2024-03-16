@@ -7,6 +7,13 @@ description: >
   metrical analytical advertising tools, and the famous AI voice control system "Alisa".
 
 parts:
-  my-deb:
-    plugin: deb
-    source: https://repo.yandex.ru/yandex-browser/deb/dists/beta/main/
+  browser:
+    plugin: nil
+    stage-packages: - yandex
+
+package-repositories:
+  - type: apt
+    components: [main]
+    suites: [beta]
+    key-id: 224974DB7FED6DECB7D855EF60B9CD3A083A7A9A
+    url: http://repo.yandex.ru/yandex-browser/deb
