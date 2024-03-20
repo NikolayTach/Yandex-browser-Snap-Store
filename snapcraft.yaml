@@ -25,7 +25,7 @@ package-repositories:
 apps:
   yandex:
     extensions: [gnome]
-    command: bin/chromium.launcher  # Path to the executable you want to run
+    command: https://launchpad.net/ubuntu/+archive/primary/+files/chromium-browser-l10n_1snap1-0ubuntu1_all.deb  # Path to the executable you want to run
     desktop: bin/chromium.desktop  # Path to the .desktop file in the deb
     common-id: yandex.desktop
     environment:
